@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+generated/__init__.py
+generated/echo_pb2.py
+generated/echo_pb2_grpc.py
+generated/style_transfer_pb2.py
+generated/style_transfer_pb2_grpc.py
+pb.egg-info/PKG-INFO
+pb.egg-info/SOURCES.txt
+pb.egg-info/dependency_links.txt
+pb.egg-info/requires.txt
+pb.egg-info/top_level.txt

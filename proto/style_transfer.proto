@@ -1,0 +1,39 @@
+syntax = "proto3";
+import "google/api/annotations.proto";
+option go_package = "./";
+message StyleTransferRequest {
+    bytes content_image = 1;
+    bytes style_image = 2;
+
+    // Must be between 0 to 1
+    float alpha = 3;
+}
+
+message StyleTransferURLRequest {
+    string content_image_url = 1;
+    string style_image_url = 2;
+    
+    float alpha = 3;
+}
+
+message StyleTransferResponse {
+    bytes stylized_image = 1;
+}
+
+service StyleTransferService {
+    // Performs arbitrary style transfer given a style image, content, and style strength (alpha)
+    rpc StyleTransfer(StyleTransferRequest) returns (StyleTransferResponse) {
+        option (google.api.http) = {
+            post: "/v1/style-transfer/bytes"
+            body: "*"
+          };
+    }
+    
+    // Performs arbitrary style transfer given image URLs
+    rpc StyleTransferURL(StyleTransferURLRequest) returns (StyleTransferResponse) {
+        option (google.api.http) = {
+            post: "/v1/style-transfer/url"
+            body: "*"
+          };
+    }
+}
