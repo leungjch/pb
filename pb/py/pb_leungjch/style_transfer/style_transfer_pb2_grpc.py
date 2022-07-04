@@ -2,7 +2,7 @@
 """Client and server classes corresponding to protobuf-defined services."""
 import grpc
 
-import style_transfer_pb2 as style__transfer__pb2
+from . import style_transfer_pb2 as style__transfer__pb2
 
 
 class StyleTransferServiceStub(object):

@@ -2,7 +2,7 @@
 """Client and server classes corresponding to protobuf-defined services."""
 import grpc
 
-import echo_pb2 as echo__pb2
+from . import echo_pb2 as echo__pb2
 
 
 class EchoServiceStub(object):
