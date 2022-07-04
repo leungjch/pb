@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(
-    name='pbleungjch',
+    name='pb_leungjch',
     url='https://github.com/leungjch/pb',
     author='Justin Leung',
     packages=['pb_leungjch'],
