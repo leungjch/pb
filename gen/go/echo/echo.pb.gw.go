@@ -2,11 +2,11 @@
 // source: echo.proto
 
 /*
-Package _go is a reverse proxy.
+Package echo is a reverse proxy.
 
 It translates gRPC into RESTful JSON APIs.
 */
-package _go
+package echo
 
 import (
 	"context"

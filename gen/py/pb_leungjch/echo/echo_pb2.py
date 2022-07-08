@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from google.api import annotations_pb2 as google_dot_api_dot_annotations__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\necho.proto\x1a\x1cgoogle/api/annotations.proto\"\x1e\n\rStringMessage\x12\r\n\x05value\x18\x01 \x01(\t2J\n\x0b\x45\x63hoService\x12;\n\x04\x45\x63ho\x12\x0e.StringMessage\x1a\x0e.StringMessage\"\x13\x82\xd3\xe4\x93\x02\r\"\x08/v1/echo:\x01*B\x1fZ\x1dgithub.com/leungjch/pb/gen/gob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\necho.proto\x1a\x1cgoogle/api/annotations.proto\"\x1e\n\rStringMessage\x12\r\n\x05value\x18\x01 \x01(\t2J\n\x0b\x45\x63hoService\x12;\n\x04\x45\x63ho\x12\x0e.StringMessage\x1a\x0e.StringMessage\"\x13\x82\xd3\xe4\x93\x02\r\"\x08/v1/echo:\x01*B$Z\"github.com/leungjch/pb/gen/go/echob\x06proto3')
 
 
 
@@ -31,7 +31,7 @@ _ECHOSERVICE = DESCRIPTOR.services_by_name['EchoService']
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'Z\035github.com/leungjch/pb/gen/go'
+  DESCRIPTOR._serialized_options = b'Z\"github.com/leungjch/pb/gen/go/echo'
   _ECHOSERVICE.methods_by_name['Echo']._options = None
   _ECHOSERVICE.methods_by_name['Echo']._serialized_options = b'\202\323\344\223\002\r\"\010/v1/echo:\001*'
   _STRINGMESSAGE._serialized_start=44
