@@ -2,11 +2,11 @@
 // source: style_transfer.proto
 
 /*
-Package __ is a reverse proxy.
+Package style_transfer is a reverse proxy.
 
 It translates gRPC into RESTful JSON APIs.
 */
-package __
+package style_transfer
 
 import (
 	"context"

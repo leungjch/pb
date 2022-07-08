@@ -4,7 +4,7 @@
 // - protoc             v3.19.4
 // source: style_transfer.proto
 
-package __
+package style_transfer
 
 import (
 	context "context"

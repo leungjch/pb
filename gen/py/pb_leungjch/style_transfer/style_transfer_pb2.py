@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from google.api import annotations_pb2 as google_dot_api_dot_annotations__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x14style_transfer.proto\x1a\x1cgoogle/api/annotations.proto\"Q\n\x14StyleTransferRequest\x12\x15\n\rcontent_image\x18\x01 \x01(\x0c\x12\x13\n\x0bstyle_image\x18\x02 \x01(\x0c\x12\r\n\x05\x61lpha\x18\x03 \x01(\x02\"\\\n\x17StyleTransferURLRequest\x12\x19\n\x11\x63ontent_image_url\x18\x01 \x01(\t\x12\x17\n\x0fstyle_image_url\x18\x02 \x01(\t\x12\r\n\x05\x61lpha\x18\x03 \x01(\x02\"/\n\x15StyleTransferResponse\x12\x16\n\x0estylized_image\x18\x01 \x01(\x0c\x32\xe4\x01\n\x14StyleTransferService\x12\x63\n\rStyleTransfer\x12\x15.StyleTransferRequest\x1a\x16.StyleTransferResponse\"#\x82\xd3\xe4\x93\x02\x1d\"\x18/v1/style-transfer/bytes:\x01*\x12g\n\x10StyleTransferURL\x12\x18.StyleTransferURLRequest\x1a\x16.StyleTransferResponse\"!\x82\xd3\xe4\x93\x02\x1b\"\x16/v1/style-transfer/url:\x01*B\x04Z\x02./b\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x14style_transfer.proto\x1a\x1cgoogle/api/annotations.proto\"Q\n\x14StyleTransferRequest\x12\x15\n\rcontent_image\x18\x01 \x01(\x0c\x12\x13\n\x0bstyle_image\x18\x02 \x01(\x0c\x12\r\n\x05\x61lpha\x18\x03 \x01(\x02\"\\\n\x17StyleTransferURLRequest\x12\x19\n\x11\x63ontent_image_url\x18\x01 \x01(\t\x12\x17\n\x0fstyle_image_url\x18\x02 \x01(\t\x12\r\n\x05\x61lpha\x18\x03 \x01(\x02\"/\n\x15StyleTransferResponse\x12\x16\n\x0estylized_image\x18\x01 \x01(\x0c\x32\xe4\x01\n\x14StyleTransferService\x12\x63\n\rStyleTransfer\x12\x15.StyleTransferRequest\x1a\x16.StyleTransferResponse\"#\x82\xd3\xe4\x93\x02\x1d\"\x18/v1/style-transfer/bytes:\x01*\x12g\n\x10StyleTransferURL\x12\x18.StyleTransferURLRequest\x1a\x16.StyleTransferResponse\"!\x82\xd3\xe4\x93\x02\x1b\"\x16/v1/style-transfer/url:\x01*B.Z,github.com/leungjch/pb/gen/go/style_transferb\x06proto3')
 
 
 
@@ -47,7 +47,7 @@ _STYLETRANSFERSERVICE = DESCRIPTOR.services_by_name['StyleTransferService']
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'Z\002./'
+  DESCRIPTOR._serialized_options = b'Z,github.com/leungjch/pb/gen/go/style_transfer'
   _STYLETRANSFERSERVICE.methods_by_name['StyleTransfer']._options = None
   _STYLETRANSFERSERVICE.methods_by_name['StyleTransfer']._serialized_options = b'\202\323\344\223\002\035\"\030/v1/style-transfer/bytes:\001*'
   _STYLETRANSFERSERVICE.methods_by_name['StyleTransferURL']._options = None

@@ -1,6 +1,7 @@
 syntax = "proto3";
 import "google/api/annotations.proto";
-option go_package = "./";
+option go_package = "github.com/leungjch/pb/gen/go/style_transfer";
+
 message StyleTransferRequest {
     bytes content_image = 1;
     bytes style_image = 2;
