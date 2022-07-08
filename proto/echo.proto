@@ -1,6 +1,6 @@
 syntax = "proto3";
 import "google/api/annotations.proto";
-option go_package = "./";
+option go_package = "github.com/leungjch/pb/gen/go";
 
 message StringMessage {
     string value = 1;

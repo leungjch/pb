@@ -8,12 +8,12 @@ do
     echo $base
     # Generate Python gRPC stubs
     python -m grpc_tools.protoc -Iproto \
-        --python_out=pb/py/pb_leungjch/${base} \
-        --grpc_python_out=pb/py/pb_leungjch/${base} \
+        --python_out=gen/py/pb_leungjch/${base} \
+        --grpc_python_out=gen/py/pb_leungjch/${base} \
         $base.proto
     
     # Generate gRPC Gateway stubs
-    protoc -Iproto --grpc-gateway_out pb/go/${base} \
+    protoc -Iproto --grpc-gateway_out gen/go/${base} \
         --grpc-gateway_opt logtostderr=true \
         --grpc-gateway_opt paths=source_relative \
         --grpc-gateway_opt generate_unbound_methods=true \
@@ -27,4 +27,4 @@ done
 #     style_transfer.proto
 
 # https://stackoverflow.com/a/69378666
-gsed -i 's/^import .*_pb2 as/from . \0/' pb/py/pb_leungjch/*/*_pb2_grpc.py
+gsed -i 's/^import .*_pb2 as/from . \0/' gen/py/pb_leungjch/*/*_pb2_grpc.py
