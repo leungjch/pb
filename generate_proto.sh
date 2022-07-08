@@ -12,7 +12,13 @@ do
         --grpc_python_out=gen/py/pb_leungjch/${base} \
         $base.proto
     
-    # Generate gRPC Gateway stubs
+    # Generate Go gRPC stubs
+    protoc -Iproto \
+        --go_out gen/go/${base} --go_opt paths=source_relative \
+        --go-grpc_out gen/go/${base} --go-grpc_opt paths=source_relative \
+        $base.proto
+        
+    # Generate Go gRPC Gateway stubs
     protoc -Iproto --grpc-gateway_out gen/go/${base} \
         --grpc-gateway_opt logtostderr=true \
         --grpc-gateway_opt paths=source_relative \
